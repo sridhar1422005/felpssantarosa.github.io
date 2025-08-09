@@ -7,6 +7,9 @@
   "hero_subtitle": "Backend Developer | Systems Architecture",
   "hero_keywords": "Node.js • TypeScript • REST API • Docker • Clean Architecture",
   "btn_lang": "Português",
+  "flag_icon": "🇧🇷",
+  "about_title": "About",
+  "about_text": "I'm Felipe Santarosa, a backend developer focused on creating efficient, scalable, and maintainable solutions. I have experience in APIs, systems integration, and performance optimization, always seeking to write clean code and apply best practices.",
   "skills_title": "Skills",
   "skills_secondary_title": "Other Relevant Skills",
   "skills_secondary_text": "React, React Native, HTML, CSS, Styled Components, CSS-in-JS, TypeORM, Fastify, Zod, Linux, Marketplace, Chatbot, TDD, DDD, creation of administrative panels.",
@@ -54,7 +57,7 @@
       ]
     }
   ],
-  "tools_title": "Tools Used:",
+  "tools_title": "Tools Used",
   "contact_title": "Contact",
   "contact_email": "contact@felipesantarosa.com",
   "contact_linkedin": "LinkedIn",

@@ -1,5 +1,23 @@
 const btnLang = document.getElementById("btn-lang");
-export let currentLang = localStorage.getItem("lang") || "pt-br";
+
+function detectBrowserLanguage() {
+  const supportedLanguages = ["pt-br", "en-us"];
+  const browserLang = navigator.language || navigator.languages[0];
+
+  if (browserLang.startsWith("pt")) {
+    return "pt-br";
+  }
+
+  const normalizedLang = browserLang.toLowerCase().replace("-", "-");
+  if (supportedLanguages.includes(normalizedLang)) {
+    return normalizedLang;
+  }
+
+  return "en-us";
+}
+
+export let currentLang =
+  localStorage.getItem("lang") || detectBrowserLanguage();
 
 export async function loadLanguage(lang) {
   try {
@@ -49,16 +67,26 @@ export async function loadLanguage(lang) {
         toolsList.innerHTML = "";
         project.tools.forEach((tool) => {
           const li = document.createElement("li");
-          li.textContent = tool;
+
+          if (window.renderToolWithIcon) {
+            li.innerHTML = window.renderToolWithIcon(tool);
+          } else {
+            li.textContent = tool;
+          }
+
           toolsList.appendChild(li);
         });
       }
     });
 
-    if (btnLang) btnLang.textContent = texts.btn_lang;
+    if (btnLang) {
+      btnLang.innerHTML = `<span class="flag-icon">${texts.flag_icon}</span> ${texts.btn_lang}`;
+    }
 
     localStorage.setItem("lang", lang);
     currentLang = lang;
+
+    window.dispatchEvent(new CustomEvent("languageChanged"));
   } catch (error) {
     console.error("Erro ao carregar idioma:", error);
   }

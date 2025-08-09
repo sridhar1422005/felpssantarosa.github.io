@@ -21,6 +21,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <script src="/scripts/main.js" type="module"></script>
   </head>
 
@@ -29,13 +30,16 @@
       <div class="nav-container">
         <div class="logo" id="hero_title">Felipe Santarosa</div>
         <ul class="nav-links">
-          <li><a href="#about" data-i18n="nav_sobre">Sobre</a></li>
-          <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+          <li><a href="#about" data-i18n="nav_sobre"><i data-lucide="user"></i> Sobre</a></li>
+          <li><a href="#skills" data-i18n="nav_skills"><i data-lucide="code"></i> Skills</a></li>
           <li>
-            <a href="#projects" data-i18n="nav_projetos">Projetos Comerciais</a>
+            <a href="#projects" data-i18n="nav_projetos"><i data-lucide="briefcase"></i> Projetos Comerciais</a>
           </li>
-          <li><a href="#contact" data-i18n="nav_contato">Contato</a></li>
+          <li><a href="#contact" data-i18n="nav_contato"><i data-lucide="mail"></i> Contato</a></li>
         </ul>
+        <button id="btn-lang" class="lang-toggle" data-i18n="btn_lang">
+          <span class="flag-icon">🇧🇷</span> PT
+        </button>
       </div>
     </nav>
 
@@ -63,12 +67,12 @@
 
           <!-- Social Networks -->
           <div class="social-buttons fade-in delay3">
-            <a
-              href="https://github.com/HiImFelipe"
+                        <a
+              href="https://github.com/felpssantarosa"
               target="_blank"
               class="btn-social github"
             >
-              <i class="fab fa-github"></i>
+              <i data-lucide="github"></i>
               <p>GitHub</p>
             </a>
             <a
@@ -76,14 +80,14 @@
               target="_blank"
               class="btn-social linkedin"
             >
-              <i class="fab fa-linkedin"></i>
+              <i data-lucide="linkedin"></i>
               <p>LinkedIn</p>
             </a>
             <a
               href="mailto:contact@felipesantarosa.com"
               class="btn-social email"
             >
-              <i class="fas fa-envelope"></i>
+              <i data-lucide="mail"></i>
               <p>E-mail</p>
             </a>
           </div>
@@ -91,7 +95,7 @@
       </div>
 
       <div id="about" class="container fade-in delay4">
-        <h2 data-i18n="about_title">Sobre</h2>
+        <h2 data-i18n="about_title"><i data-lucide="user-circle"></i> Sobre</h2>
         <div>
           <p data-i18n="about_text">
             Sou Felipe Santarosa, desenvolvedor backend focado em criar soluções
@@ -105,17 +109,41 @@
 
     <!-- Skills -->
     <section id="skills" class="container reveal">
-      <h2 data-i18n="skills_title">Skills</h2>
+      <h2 data-i18n="skills_title"><i data-lucide="zap"></i> Skills</h2>
 
       <ul class="skills-list">
-        <li class="skill-btn">Node.js</li>
-        <li class="skill-btn">TypeScript</li>
-        <li class="skill-btn">REST API</li>
-        <li class="skill-btn">gRPC</li>
-        <li class="skill-btn">Docker</li>
-        <li class="skill-btn">Redis</li>
-        <li class="skill-btn">Clean Architecture</li>
-        <li class="skill-btn">SOLID</li>
+        <li class="skill-btn">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/nodedotjs.svg" alt="Node.js" class="skill-icon" />
+          Node.js
+        </li>
+        <li class="skill-btn">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/typescript.svg" alt="TypeScript" class="skill-icon" />
+          TypeScript
+        </li>
+        <li class="skill-btn">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/fastapi.svg" alt="REST API" class="skill-icon" />
+          REST API
+        </li>
+        <li class="skill-btn">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/google.svg" alt="gRPC" class="skill-icon" />
+          gRPC
+        </li>
+        <li class="skill-btn">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/docker.svg" alt="Docker" class="skill-icon" />
+          Docker
+        </li>
+        <li class="skill-btn">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/redis.svg" alt="Redis" class="skill-icon" />
+          Redis
+        </li>
+        <li class="skill-btn">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/blueprint.svg" alt="Clean Architecture" class="skill-icon" />
+          Clean Architecture
+        </li>
+        <li class="skill-btn">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/solid.svg" alt="SOLID" class="skill-icon" />
+          SOLID
+        </li>
       </ul>
 
       <h3 class="skills-secondary" data-i18n="skills_secondary_title">
@@ -131,63 +159,79 @@
 
     <!-- Projects -->
     <section id="projects" class="container reveal">
-      <h2 data-i18n="projects_title">Projetos Comerciais</h2>
+      <h2 data-i18n="projects_title"><i data-lucide="folder-open"></i> Projetos Comerciais</h2>
 
       <div class="project-card" id="project1">
-        <h3>Chatbot Para Farmácias de Manipulação</h3>
-        <p>
-          Participei de um projeto onde eu e meu time estruturamos um sistema de
-          Chatbot do zero, para atender a demanda de farmácias de manipulação
-          parceiras. O projeto foi uma parceria com uma das maiores redes de
-          farmácias de São Paulo.
-        </p>
+        <h3><i data-lucide="bot"></i> Chatbot Para Farmácias de Manipulação</h3>
 
-        <h4>Principais Desafios</h4>
-        <ul class="challenges">
-          <li>
-            Identificação de dados em strings, tentando extrair informações
-            relevantes para cada passo da triagem.
-          </li>
-          <li>
-            Identificação de quando um usuário queria falar com um atendente.
-          </li>
-          <li>Caching de dados para evitar perguntas repetidas ao cliente.</li>
-          <li>
-            Realização de testes para um sistema que foi estruturado
-            internamente.
-          </li>
-        </ul>
+        <div class="card-section">
+          <p>
+            Participei de um projeto onde eu e meu time estruturamos um sistema de
+            Chatbot do zero, para atender a demanda de farmácias de manipulação
+            parceiras. O projeto foi uma parceria com uma das maiores redes de
+            farmácias de São Paulo.
+          </p>
+        </div>
 
-        <h4 data-i18n="tools_title">Ferramentas Utilizadas:</h4>
-        <ul class="tools" id="project1_tools"></ul>
+        <div class="card-section">
+          <h4><i data-lucide="target"></i> Principais Desafios</h4>
+
+          <ul class="challenges">
+            <li>
+              Identificação de dados em strings, tentando extrair informações
+              relevantes para cada passo da triagem.
+            </li>
+            <li>
+              Identificação de quando um usuário queria falar com um atendente.
+            </li>
+            <li>Caching de dados para evitar perguntas repetidas ao cliente.</li>
+            <li>
+              Realização de testes para um sistema que foi estruturado
+              internamente.
+            </li>
+          </ul>
+        </div>
+
+        <div class="card-footer">
+          <h4 data-i18n="tools_title"><i data-lucide="wrench"></i> Ferramentas Utilizadas</h4>
+          <ul class="tools" id="project1_tools"></ul>
+        </div>
       </div>
 
       <div class="project-card" id="project2">
-        <h3>Website Administrativo/Marketplace</h3>
-        <p>
-          Participei de um projeto onde realizei a criação de telas
-          administrativas, componentes da biblioteca interna (botões, modais,
-          seletores, etc.) e integração com a API de lojas parceiras.
-        </p>
+        <h3><i data-lucide="shopping-cart"></i> Website Administrativo/Marketplace</h3>
 
-        <h4>Principais Desafios</h4>
-        <ul class="challenges">
-          <li>Compreensão da API de lojas parceiras.</li>
-          <li>Criação de uma interface de usuário intuitiva e responsiva.</li>
-          <li>Garantia de performance e escalabilidade da aplicação.</li>
+        <div class="card-section">
+          <p>
+            Participei de um projeto onde realizei a criação de telas
+            administrativas, componentes da biblioteca interna (botões, modais,
+            seletores, etc.) e integração com a API de lojas parceiras.
+          </p>
+        </div>
+
+        <div class="card-section">
+          <h4><i data-lucide="target"></i> Principais Desafios</h4>
+
+          <ul class="challenges">
+            <li>Compreensão da API de lojas parceiras.</li>
+            <li>Criação de uma interface de usuário intuitiva e responsiva.</li>
+            <li>Garantia de performance e escalabilidade da aplicação.</li>
         </ul>
 
-        <h4 data-i18n="tools_title">Ferramentas Utilizadas:</h4>
-        <ul class="tools" id="project2_tools"></ul>
+        <div class="card-footer">
+          <h4 data-i18n="tools_title"><i data-lucide="wrench"></i> Ferramentas Utilizadas</h4>
+          <ul class="tools" id="project2_tools"></ul>
+        </div>
       </div>
     </section>
 
     <footer>
       <!-- Contact -->
       <section id="contact" class="container reveal mb-0 pb-0">
-        <h2 data-i18n="contact_title">Contato</h2>
-        <p>
-          📧
+        <h2 data-i18n="contact_title"><i data-lucide="phone"></i> Contato</h2>
+
+        <p class="contact-item">
+          <i data-lucide="mail"></i>
           <a
             href="mailto:contact@felipesantarosa.com"
             class="contact-link"
@@ -195,23 +239,28 @@
             >contact@felipesantarosa.com</a
           >
         </p>
-        <p>
-          🔗
-          <a
-            href="https://www.linkedin.com/in/felipe-santarosa/"
-            target="_blank"
-            class="contact-link"
-            id="contact_linkedin"
-            >LinkedIn</a
-          >
-          |
-          <a
-            href="https://github.com/HiImFelipe"
-            target="_blank"
-            class="contact-link"
-            id="contact_github"
-            >GitHub</a
-          >
+
+        <p class="contact-item">
+          <i data-lucide="link"></i>
+          <span class="contact-links">
+            <a
+              href="https://www.linkedin.com/in/felipe-santarosa/"
+              target="_blank"
+              class="contact-link"
+              id="contact_linkedin"
+            >
+              LinkedIn
+            </a>
+            |
+            <a
+              href="https://github.com/HiImFelipe"
+              target="_blank"
+              class="contact-link"
+              id="contact_github"
+            >
+              GitHub
+            </a>
+          </span>
         </p>
 
         <p id="footer_text" class="copyright">© 2025 Felipe Santarosa</p>

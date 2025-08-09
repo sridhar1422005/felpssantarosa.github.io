@@ -1,37 +1,174 @@
 .project-card {
   background: var(--card-bg);
-  padding: 1rem;
-  border-radius: 8px;
+  padding: 2rem;
+  border-radius: 16px;
   margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  backdrop-filter: blur(15px);
+}
+
+.project-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.card-footer {
+  margin-top: 1.5rem;
+  border: solid 1px #3f3f46;
+  background-color: rgba(124, 100, 142, 0.1);
+  padding: 1rem;
+  border-radius: 16px;
 }
 
 .project-card h4 {
-  margin: 1.5rem 0;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
 }
 
-.project-card ul {
+.project-card ul.challenges li {
   list-style-position: inside;
 }
 
+.card-section {
+  margin-bottom: 2rem;
+}
+
 ul.tools {
-  list-style: none; /* Remove as bolinhas da lista */
+  list-style: none;
   padding: 0;
   margin: 0;
-  display: flex; /* Coloca os itens lado a lado */
-  flex-wrap: wrap; /* Permite que quebrem linha se não couber */
-  gap: 10px; /* Espaçamento entre os itens */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 ul.tools li {
-  background-color: #333;
-  color: white;
-  padding: 8px 14px;
-  border-radius: 8px;
-  transition: background-color 0.2s ease;
+  border-radius: 9999px;
+
+  background-color: transparent;
+  color: #fafafa;
+  border: 1px solid #3f3f46;
+
+  padding: 4px 16px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.tool-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.tool-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  filter: brightness(0) invert(1);
+  transition: filter 0.2s ease;
+}
+
+/* Technology-specific colors on hover */
+ul.tools li:hover .tool-nodejs .tool-icon {
+  filter: brightness(0) saturate(100%) invert(54%) sepia(85%) saturate(6919%)
+    hue-rotate(93deg) brightness(101%) contrast(101%);
+}
+
+ul.tools li:hover .tool-typescript .tool-icon {
+  filter: brightness(0) saturate(100%) invert(36%) sepia(83%) saturate(3448%)
+    hue-rotate(207deg) brightness(91%) contrast(93%);
+}
+
+ul.tools li:hover .tool-react .tool-icon {
+  filter: brightness(0) saturate(100%) invert(79%) sepia(67%) saturate(4158%)
+    hue-rotate(169deg) brightness(101%) contrast(101%);
+}
+
+ul.tools li:hover .tool-docker .tool-icon {
+  filter: brightness(0) saturate(100%) invert(52%) sepia(84%) saturate(5436%)
+    hue-rotate(202deg) brightness(91%) contrast(96%);
+}
+
+ul.tools li:hover .tool-redis .tool-icon {
+  filter: brightness(0) saturate(100%) invert(20%) sepia(90%) saturate(6705%)
+    hue-rotate(356deg) brightness(102%) contrast(95%);
+}
+
+ul.tools li:hover .tool-grpc .tool-icon {
+  filter: brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(1352%)
+    hue-rotate(202deg) brightness(99%) contrast(97%);
+}
+
+ul.tools li:hover .tool-tailwind-css .tool-icon {
+  filter: brightness(0) saturate(100%) invert(79%) sepia(67%) saturate(4158%)
+    hue-rotate(169deg) brightness(101%) contrast(101%);
 }
 
 ul.tools li:hover {
-  background-color: #555; /* Cor ao passar o mouse */
+  background-color: #563f3f; /* Cor ao passar o mouse */
+}
+
+.project-card ul.challenges {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-card ul.challenges li {
+  border-radius: 16px;
+  position: relative;
+  padding: 1.25rem 0 1.25rem 2.5rem;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #e4e4e7;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.project-card ul.challenges li:last-child {
+  border-bottom: none;
+}
+
+.project-card ul.challenges li::before {
+  content: "";
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: #3f3f46;
+  border: 2px solid #71717a;
+  border-radius: 50%;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card ul.challenges li:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(24, 24, 27, 0.8) 0%,
+    rgba(39, 39, 42, 0.4) 100%
+  );
+  transform: translateX(8px);
+  padding-left: 2.75rem;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.project-card ul.challenges li:hover::before {
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+  border-color: #3b82f6;
+  transform: translateY(-50%) scale(1.2);
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.3);
 }
 
 @media screen and (max-width: 500px) {
