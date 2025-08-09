@@ -1,0 +1,38 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  gap: 1rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--accent-color);
+}

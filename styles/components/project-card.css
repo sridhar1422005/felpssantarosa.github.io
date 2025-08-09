@@ -1,0 +1,41 @@
+.project-card {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.project-card h4 {
+  margin: 1.5rem 0;
+}
+
+.project-card ul {
+  list-style-position: inside;
+}
+
+ul.tools {
+  list-style: none; /* Remove as bolinhas da lista */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Coloca os itens lado a lado */
+  flex-wrap: wrap; /* Permite que quebrem linha se não couber */
+  gap: 10px; /* Espaçamento entre os itens */
+}
+
+ul.tools li {
+  background-color: #333;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+ul.tools li:hover {
+  background-color: #555; /* Cor ao passar o mouse */
+}
+
+@media screen and (max-width: 500px) {
+  .project-card {
+    padding: 0.8rem;
+  }
+}

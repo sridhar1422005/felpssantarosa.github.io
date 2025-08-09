@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Felipe Santarosa - Desenvolvedor</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,
+    %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E
+    %3Crect width='100' height='100' fill='%23038bfc'/%3E
+    %3Ctext x='50' y='70' font-size='60' fill='white' font-family='Arial' text-anchor='middle'%3EFS%3C/text%3E
+    %3C/svg%3E"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="scripts/main.js" type="module" defer></script>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo" id="hero_title">Felipe Santarosa</div>
+        <ul class="nav-links">
+          <li><a href="#about" data-i18n="nav_sobre">Sobre</a></li>
+          <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+          <li>
+            <a href="#projects" data-i18n="nav_projetos">Projetos Comerciais</a>
+          </li>
+          <li><a href="#contact" data-i18n="nav_contato">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div id="hero-container" class="container reveal">
+        <div>
+          <img
+            src="assets/profile.webp"
+            alt="Logo"
+            class="fade-in circular-img"
+            width="256"
+            height="256"
+          />
+          <h1 class="fade-in" data-i18n="hero_title">Felipe Santarosa</h1>
+          <p class="fade-in delay1" data-i18n="hero_subtitle">
+            Desenvolvedor Backend | Arquitetura de Sistemas
+          </p>
+          <p
+            class="fade-in delay2 highlight-keywords"
+            data-i18n="hero_keywords"
+          >
+            Node.js • TypeScript • REST API • Docker • Clean Architecture
+          </p>
+
+          <!-- Social Networks -->
+          <div class="social-buttons fade-in delay3">
+            <a
+              href="https://github.com/HiImFelipe"
+              target="_blank"
+              class="btn-social github"
+            >
+              <i class="fab fa-github"></i>
+              <p>GitHub</p>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/felipe-santarosa/"
+              target="_blank"
+              class="btn-social linkedin"
+            >
+              <i class="fab fa-linkedin"></i>
+              <p>LinkedIn</p>
+            </a>
+            <a
+              href="mailto:contact@felipesantarosa.com"
+              class="btn-social email"
+            >
+              <i class="fas fa-envelope"></i>
+              <p>E-mail</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="about" class="container fade-in delay4">
+        <h2 data-i18n="about_title">Sobre</h2>
+        <div>
+          <p data-i18n="about_text">
+            Sou Felipe Santarosa, desenvolvedor backend focado em criar soluções
+            eficientes, escaláveis e de fácil manutenção. Tenho experiência em
+            APIs, integração de sistemas e otimização de desempenho, sempre
+            buscando escrever código limpo e aplicar boas práticas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="container reveal">
+      <h2 data-i18n="skills_title">Skills</h2>
+
+      <ul class="skills-list">
+        <li class="skill-btn">Node.js</li>
+        <li class="skill-btn">TypeScript</li>
+        <li class="skill-btn">REST API</li>
+        <li class="skill-btn">gRPC</li>
+        <li class="skill-btn">Docker</li>
+        <li class="skill-btn">Redis</li>
+        <li class="skill-btn">Clean Architecture</li>
+        <li class="skill-btn">SOLID</li>
+      </ul>
+
+      <h3 class="skills-secondary" data-i18n="skills_secondary_title">
+        Outras skills relevantes
+      </h3>
+
+      <p class="skills-secondary" data-i18n="skills_secondary_text">
+        React, React Native, HTML, CSS, Styled Components, CSS-in-JS, TypeORM,
+        Fastify, Zod, Linux, Marketplace, Chatbot, TDD, DDD, criação de painéis
+        administrativos.
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="container reveal">
+      <h2 data-i18n="projects_title">Projetos Comerciais</h2>
+
+      <div class="project-card" id="project1">
+        <h3>Chatbot Para Farmácias de Manipulação</h3>
+        <p>
+          Participei de um projeto onde eu e meu time estruturamos um sistema de
+          Chatbot do zero, para atender a demanda de farmácias de manipulação
+          parceiras. O projeto foi uma parceria com uma das maiores redes de
+          farmácias de São Paulo.
+        </p>
+
+        <h4>Principais Desafios</h4>
+        <ul class="challenges">
+          <li>
+            Identificação de dados em strings, tentando extrair informações
+            relevantes para cada passo da triagem.
+          </li>
+          <li>
+            Identificação de quando um usuário queria falar com um atendente.
+          </li>
+          <li>Caching de dados para evitar perguntas repetidas ao cliente.</li>
+          <li>
+            Realização de testes para um sistema que foi estruturado
+            internamente.
+          </li>
+        </ul>
+
+        <h4 data-i18n="tools_title">Ferramentas Utilizadas:</h4>
+        <ul class="tools" id="project1_tools"></ul>
+      </div>
+
+      <div class="project-card" id="project2">
+        <h3>Website Administrativo/Marketplace</h3>
+        <p>
+          Participei de um projeto onde realizei a criação de telas
+          administrativas, componentes da biblioteca interna (botões, modais,
+          seletores, etc.) e integração com a API de lojas parceiras.
+        </p>
+
+        <h4>Principais Desafios</h4>
+        <ul class="challenges">
+          <li>Compreensão da API de lojas parceiras.</li>
+          <li>Criação de uma interface de usuário intuitiva e responsiva.</li>
+          <li>Garantia de performance e escalabilidade da aplicação.</li>
+        </ul>
+
+        <h4 data-i18n="tools_title">Ferramentas Utilizadas:</h4>
+        <ul class="tools" id="project2_tools"></ul>
+      </div>
+    </section>
+
+    <footer>
+      <!-- Contact -->
+      <section id="contact" class="container reveal mb-0 pb-0">
+        <h2 data-i18n="contact_title">Contato</h2>
+        <p>
+          📧
+          <a
+            href="mailto:contact@felipesantarosa.com"
+            class="contact-link"
+            id="contact_email"
+            >contact@felipesantarosa.com</a
+          >
+        </p>
+        <p>
+          🔗
+          <a
+            href="https://www.linkedin.com/in/felipe-santarosa/"
+            target="_blank"
+            class="contact-link"
+            id="contact_linkedin"
+            >LinkedIn</a
+          >
+          |
+          <a
+            href="https://github.com/HiImFelipe"
+            target="_blank"
+            class="contact-link"
+            id="contact_github"
+            >GitHub</a
+          >
+        </p>
+
+        <p id="footer_text" class="copyright">© 2025 Felipe Santarosa</p>
+      </section>
+    </footer>
+  </body>
+</html>

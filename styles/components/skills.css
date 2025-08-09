@@ -1,0 +1,68 @@
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  list-style: none;
+  align-content: stretch;
+  margin-bottom: 4rem;
+}
+
+.skills-list li {
+  display: flex;
+  flex: 1 0 250px;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem 0;
+}
+
+.skill-btn {
+  background: var(--card-bg);
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.skill-btn:hover {
+  background: var(--highlight-color);
+  color: #0f172a;
+}
+
+.skills-secondary {
+  color: #94a3b8;
+  margin-top: 0.5rem;
+  text-align: right;
+  max-width: 460px;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 500px) {
+  .circular-img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .social-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .skills-list {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .btn-social {
+    padding: 0.4rem 0.8rem;
+    width: 75%;
+  }
+}

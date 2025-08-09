@@ -1,0 +1,99 @@
+@import url("components/footer.css");
+@import url("components/hero.css");
+@import url("components/navigation.css");
+@import url("components/project-card.css");
+@import url("components/social-buttons.css");
+@import url("components/skills.css");
+
+:root {
+  --bg-color: #0f172a;
+  --text-color: #f1f5f9;
+  --accent-color: #38bdf8;
+  --highlight-color: #22d3ee;
+  --card-bg: #1e293b;
+  --font-main: "Inter", sans-serif;
+  --font-code: "Fira Code", monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 70px; /* Extra space to accomodate the navbar size when clicking internal links */
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 2rem 0;
+  overflow: visible;
+}
+
+h2 {
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+}
+
+h3 {
+  margin: 1.5rem 0 1rem;
+  font-size: 1.3rem;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+}
+
+.delay1 {
+  animation-delay: 0.3s;
+}
+.delay2 {
+  animation-delay: 0.6s;
+}
+.delay3 {
+  animation-delay: 0.9s;
+}
+.delay4 {
+  animation-delay: 1.2s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}

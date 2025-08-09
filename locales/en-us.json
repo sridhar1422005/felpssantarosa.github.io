@@ -1,0 +1,63 @@
+{
+  "nav_sobre": "About",
+  "nav_skills": "Skills",
+  "nav_projetos": "Commercial Projects",
+  "nav_contato": "Contact",
+  "hero_title": "Felipe Santarosa",
+  "hero_subtitle": "Backend Developer | Systems Architecture",
+  "hero_keywords": "Node.js • TypeScript • REST API • Docker • Clean Architecture",
+  "btn_lang": "Português",
+  "skills_title": "Skills",
+  "skills_secondary_title": "Other Relevant Skills",
+  "skills_secondary_text": "React, React Native, HTML, CSS, Styled Components, CSS-in-JS, TypeORM, Fastify, Zod, Linux, Marketplace, Chatbot, TDD, DDD, creation of administrative panels.",
+  "projects_title": "Commercial Projects",
+  "projects": [
+    {
+      "title": "Chatbot for Compounding Pharmacies",
+      "description": "I participated in a project where my team and I built a chatbot system from scratch to meet the demands of partner compounding pharmacies. The project was a partnership with one of the largest pharmacy chains in São Paulo.",
+      "challenges_title": "Main Challenges",
+      "challenges": [
+        "Identification of data in strings, trying to extract relevant information for each triage step.",
+        "Identification of when a user wanted to speak with an attendant.",
+        "Data caching to avoid repetitive questions to the client.",
+        "Testing a system that was internally structured."
+      ],
+      "tools": [
+        "NodeJS",
+        "TypeScript",
+        "REST API",
+        "gRPC",
+        "Docker",
+        "Redis",
+        "Clean Architecture",
+        "SOLID",
+        "Domain-Driven Design"
+      ]
+    },
+    {
+      "title": "Administrative/Marketplace Website",
+      "description": "I participated in a project where I created administrative screens, internal library components (buttons, modals, selectors, etc.), and integration with partner store APIs.",
+      "challenges_title": "Main Challenges",
+      "challenges": [
+        "Understanding the partner stores' API.",
+        "Creating an intuitive and responsive user interface.",
+        "Ensuring performance and scalability of the application."
+      ],
+      "tools": [
+        "NodeJS",
+        "TypeScript",
+        "React",
+        "NextJS",
+        "Styled Components",
+        "CSS-in-JS",
+        "Tailwind CSS"
+      ]
+    }
+  ],
+  "tools_title": "Tools Used:",
+  "contact_title": "Contact",
+  "contact_email": "contact@felipesantarosa.com",
+  "contact_linkedin": "LinkedIn",
+  "contact_github": "GitHub",
+  "footer_text": "© 2025 Felipe Santarosa"
+}
