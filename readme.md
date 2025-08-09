@@ -25,6 +25,7 @@
 | **HTML5**              | Semantic markup and structure            |
 | **CSS3**               | Modern styling with Flexbox/Grid         |
 | **Vanilla JavaScript** | Interactive functionality and animations |
+| **Vite**               | Build tool and development server        |
 | **Font Awesome**       | Icon library                             |
 | **Google Fonts**       | Typography (Inter & Fira Code)           |
 
@@ -58,8 +59,8 @@ personal-website/
 
 ### Prerequisites
 
-- A modern web browser
-- A local web server (optional, for development)
+- Node.js (v16 or higher)
+- npm or yarn
 
 ### Installation
 
@@ -70,20 +71,32 @@ personal-website/
    cd felpssantarosa.github.io
    ```
 
-2. **Open in browser**
+2. **Install dependencies**
 
    ```bash
-   # Option 1: Direct file opening
-   open index.html
-
-   # Option 2: Using Python's built-in server
-   python -m http.server 8000
-
-   # Option 3: Using Node.js http-server
-   npx http-server . -p 8000
+   npm install
    ```
 
-3. **Visit** `http://localhost:8000` in your browser
+3. **Start development server**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Visit** `http://localhost:3000` in your browser
+
+### Building for Production
+
+```bash
+# Build the project
+npm run build
+
+# Preview the build
+npm run preview
+
+# Deploy to GitHub Pages
+npm run deploy
+```
 
 ## 🌐 Internationalization
 
@@ -116,17 +129,30 @@ The website is fully responsive with breakpoints for:
 
 ## 🚀 Deployment
 
-This site is deployed using GitHub Pages:
+This site is deployed using GitHub Pages with automated GitHub Actions:
 
 1. Push changes to the `main` branch
-2. GitHub Pages automatically deploys from the root directory
-3. Visit [felpssantarosa.github.io](https://felpssantarosa.github.io)
+2. GitHub Actions automatically builds the project with Vite
+3. Deploys the built files to GitHub Pages
+4. Visit [felpssantarosa.github.io](https://felpssantarosa.github.io)
 
 ### Alternative Deployment Options
 
-- **Netlify**: Drag and drop the project folder
-- **Vercel**: Connect GitHub repository
-- **Firebase Hosting**: Use Firebase CLI
+- **Netlify**: Drag and drop the `dist` folder after running `npm run build`
+- **Vercel**: Connect GitHub repository (auto-detects Vite)
+- **Firebase Hosting**: Use Firebase CLI with the `dist` folder
+
+## ⚡ Vite Benefits
+
+This project now uses Vite for development and building, providing:
+
+- **🔥 Hot Module Replacement** - Instant updates during development
+- **⚡ Fast Build Times** - Optimized bundling with Rollup
+- **📦 Tree Shaking** - Removes unused code automatically
+- **🔧 Modern JavaScript** - ES modules support out of the box
+- **🏗️ Asset Optimization** - Automatic image and CSS optimization
+- **🚀 Better Developer Experience** - Enhanced error reporting and debugging
+- **📱 Legacy Browser Support** - Automatic polyfills for older browsers
 
 ## 🤝 Contributing
 

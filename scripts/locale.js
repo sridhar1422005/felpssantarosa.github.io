@@ -3,7 +3,7 @@ export let currentLang = localStorage.getItem("lang") || "pt-br";
 
 export async function loadLanguage(lang) {
   try {
-    const response = await fetch(`locales/${lang}.json`);
+    const response = await fetch(`/locales/${lang}.json`);
     const texts = await response.json();
 
     document.querySelectorAll("[data-i18n]").forEach((element) => {
