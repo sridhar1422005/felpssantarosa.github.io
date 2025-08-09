@@ -11,48 +11,50 @@
   "skills_secondary_title": "Outras skills relevantes",
   "skills_secondary_text": "React, React Native, HTML, CSS, Styled Components, CSS-in-JS, TypeORM, Fastify, Zod, Linux, Marketplace, Chatbot, TDD, DDD, criação de painéis administrativos.",
   "projects_title": "Projetos Comerciais",
-  "project1": {
-    "title": "Chatbot Para Farmácias de Manipulação",
-    "description": "Participei de um projeto onde eu e meu time estruturamos um sistema de Chatbot do zero, para atender a demanda de farmácias de manipulação parceiras. O projeto foi uma parceria com uma das maiores redes de farmácias de São Paulo.",
-    "challenges_title": "Principais Desafios",
-    "challenges": [
-      "Identificação de dados em strings, tentando extrair informações relevantes para cada passo da triagem.",
-      "Identificação de quando um usuário queria falar com um atendente.",
-      "Caching de dados para evitar perguntas repetidas ao cliente.",
-      "Realização de testes para um sistema que foi estruturado internamente."
-    ],
-    "tools": [
-      "NodeJS",
-      "TypeScript",
-      "REST API",
-      "gRPC",
-      "Docker",
-      "Redis",
-      "Clean Architecture",
-      "SOLID",
-      "Domain-Driven Design"
-    ]
-  },
-  "project2": {
-    "title": "Website Administrativo/Marketplace",
-    "description": "Participei de um projeto onde realizei a criação de telas administrativas, componentes da biblioteca interna (botões, modais, seletores, etc.) e integração com a API de lojas parceiras.",
-    "challenges_title": "Principais Desafios",
-    "challenges": [
-      "Compreensão da API de lojas parceiras.",
-      "Criação de uma interface de usuário intuitiva e responsiva.",
-      "Garantia de performance e escalabilidade da aplicação."
-    ],
+  "projects": [
+    {
+      "title": "Chatbot Para Farmácias de Manipulação",
+      "description": "Participei de um projeto onde eu e meu time estruturamos um sistema de Chatbot do zero, para atender a demanda de farmácias de manipulação parceiras. O projeto foi uma parceria com uma das maiores redes de farmácias de São Paulo.",
+      "challenges_title": "Principais Desafios",
+      "challenges": [
+        "Identificação de dados em strings, tentando extrair informações relevantes para cada passo da triagem.",
+        "Identificação de quando um usuário queria falar com um atendente.",
+        "Caching de dados para evitar perguntas repetidas ao cliente.",
+        "Realização de testes para um sistema que foi estruturado internamente."
+      ],
+      "tools": [
+        "NodeJS",
+        "TypeScript",
+        "REST API",
+        "gRPC",
+        "Docker",
+        "Redis",
+        "Clean Architecture",
+        "SOLID",
+        "Domain-Driven Design"
+      ]
+    },
+    {
+      "title": "Website Administrativo/Marketplace",
+      "description": "Participei de um projeto onde realizei a criação de telas administrativas, componentes da biblioteca interna (botões, modais, seletores, etc.) e integração com a API de lojas parceiras.",
+      "challenges_title": "Principais Desafios",
+      "challenges": [
+        "Compreensão da API de lojas parceiras.",
+        "Criação de uma interface de usuário intuitiva e responsiva.",
+        "Garantia de performance e escalabilidade da aplicação."
+      ],
 
-    "tools": [
-      "NodeJS",
-      "TypeScript",
-      "React",
-      "NextJS",
-      "Styled Components",
-      "CSS-in-JS",
-      "Tailwind CSS"
-    ]
-  },
+      "tools": [
+        "NodeJS",
+        "TypeScript",
+        "React",
+        "NextJS",
+        "Styled Components",
+        "CSS-in-JS",
+        "Tailwind CSS"
+      ]
+    }
+  ],
   "tools_title": "Ferramentas Utilizadas:",
   "contact_title": "Contato",
   "contact_email": "contact@felipesantarosa.com",
