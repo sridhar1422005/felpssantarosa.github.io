@@ -35,23 +35,24 @@
 personal-website/
 ├── 📄 index.html              # Main HTML file
 ├── 📋 readme.md               # Project documentation
-├── 🖼️ assets/
-│   └── profile.webp           # Profile image
-├── 🌍 locales/
-│   ├── en-us.json            # English translations
-│   └── pt-br.json            # Portuguese translations
+├── � public/                 # Static assets served by Vite
+│   ├── �🖼️ assets/
+│   │   └── profile.webp       # Profile image
+│   └── 🌍 locales/
+│       ├── en-us.json         # English translations
+│       └── pt-br.json         # Portuguese translations
 ├── 📜 scripts/
-│   ├── locale.js             # Internationalization logic
-│   ├── main.js               # Main application entry
-│   └── revealOnScroll.js     # Scroll animations
+│   ├── locale.js              # Internationalization logic
+│   ├── main.js                # Main application entry
+│   └── revealOnScroll.js      # Scroll animations
 └── 🎨 styles/
-    ├── main.css              # Main stylesheet
+    ├── main.css               # Main stylesheet
     └── components/
-        ├── footer.css        # Footer styles
-        ├── hero.css          # Hero section styles
-        ├── navigation.css    # Navigation styles
-        ├── project-card.css  # Project card styles
-        ├── skills.css        # Skills section styles
+        ├── footer.css         # Footer styles
+        ├── hero.css           # Hero section styles
+        ├── navigation.css     # Navigation styles
+        ├── project-card.css   # Project card styles
+        ├── skills.css         # Skills section styles
         └── social-buttons.css # Social media buttons
 ```
 
