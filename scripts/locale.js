@@ -32,12 +32,21 @@ export async function loadLanguage(lang) {
 
       if (element.tagName === "INPUT" || element.tagName === "TEXTAREA") {
         element.placeholder = text;
-
         return;
       }
 
-      element.textContent = text;
+      // Use innerHTML for title elements that contain icons and wrap for alignment
+      if (key.includes("_title") && text.includes("<i")) {
+        element.innerHTML = `<span class="icon-label">${text}</span>`;
+      } else {
+        element.textContent = text;
+      }
     });
+
+    // Re-initialize Lucide icons after updating innerHTML
+    if (typeof lucide !== "undefined") {
+      lucide.createIcons();
+    }
 
     texts?.projects?.forEach((project, index) => {
       const projectEl = document.getElementById(`project${index + 1}`);
@@ -96,4 +105,3 @@ btnLang?.addEventListener("click", () => {
   const newLang = currentLang === "pt-br" ? "en-us" : "pt-br";
   loadLanguage(newLang);
 });
-

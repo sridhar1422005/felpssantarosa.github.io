@@ -8,12 +8,12 @@
   "hero_keywords": "Node.js • TypeScript • REST API • Docker • Clean Architecture",
   "btn_lang": "English",
   "flag_icon": "🇺🇸",
-  "about_title": "Sobre",
+  "about_title": "<i data-lucide=\"user-circle\"></i> Sobre",
   "about_text": "Sou Felipe Santarosa, desenvolvedor backend focado em criar soluções eficientes, escaláveis e de fácil manutenção. Tenho experiência em APIs, integração de sistemas e otimização de desempenho, sempre buscando escrever código limpo e aplicar boas práticas.",
-  "skills_title": "Skills",
-  "skills_secondary_title": "Outras skills relevantes",
+  "skills_title": "<i data-lucide=\"zap\"></i> Skills",
+  "skills_secondary_title": "<i data-lucide=\"plus-circle\"></i> Outras skills relevantes",
   "skills_secondary_text": "React, React Native, HTML, CSS, Styled Components, CSS-in-JS, TypeORM, Fastify, Zod, Linux, Marketplace, Chatbot, TDD, DDD, criação de painéis administrativos.",
-  "projects_title": "Projetos Comerciais",
+  "projects_title": "<i data-lucide=\"folder-open\"></i> Projetos Comerciais",
   "projects": [
     {
       "title": "Chatbot Para Farmácias de Manipulação",
@@ -58,8 +58,8 @@
       ]
     }
   ],
-  "tools_title": "Ferramentas Utilizadas",
-  "contact_title": "Contato",
+  "tools_title": "<i data-lucide=\"wrench\"></i> Ferramentas Utilizadas",
+  "contact_title": "<i data-lucide=\"phone\"></i> Contato",
   "contact_email": "contact@felipesantarosa.com",
   "contact_linkedin": "LinkedIn",
   "contact_github": "GitHub",

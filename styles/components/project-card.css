@@ -51,31 +51,61 @@ ul.tools li {
   color: #fafafa;
   border: 1px solid #3f3f46;
 
-  padding: 4px 16px;
-  font-size: 18px;
+  padding: 8px 16px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 1.4;
+  line-height: 1.2;
   white-space: nowrap;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   transition: all 0.2s ease;
+  min-height: 36px;
 }
 
 .tool-item {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9rem;
+  justify-content: center;
+  gap: 0.4rem;
+  font-size: 14px;
+  line-height: 1.2;
+  height: 100%;
+  width: 100%;
+}
+
+.icon-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1em;
+  line-height: 1.2;
+}
+
+/* Normalize lucide icon alignment inside titles */
+.icon-label i[data-lucide] {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  position: relative;
+  top: -0.02em; /* tiny optical tweak */
+}
+
+/* Ensure nested span text aligns alongside the icon */
+.icon-label > span {
+  line-height: 1.2;
+  display: inline-block;
 }
 
 .tool-icon {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   flex-shrink: 0;
   filter: brightness(0) invert(1);
   transition: filter 0.2s ease;
+  display: block;
 }
 
 /* Technology-specific colors on hover */
