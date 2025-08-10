@@ -115,17 +115,26 @@
     <nav class="navbar">
       <div class="nav-container">
         <div class="logo" id="hero_title">Felipe Santarosa</div>
-        <ul class="nav-links">
-          <li><a href="#about" data-i18n="nav_sobre">Sobre</a></li>
-          <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
-          <li>
-            <a href="#projects" data-i18n="nav_projetos">Projetos Comerciais</a>
-          </li>
-          <li><a href="#contact" data-i18n="nav_contato">Contato</a></li>
-        </ul>
-        <button id="btn-lang" class="lang-toggle" data-i18n="btn_lang">
-          <span class="flag-icon">🇧🇷</span> PT
+        
+        <button class="burger-menu" id="burger-menu" aria-label="Toggle navigation menu">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
         </button>
+        
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-links">
+            <li><a href="#hero-container" data-i18n="nav_sobre">Sobre</a></li>
+            <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+            <li>
+              <a href="#projects" data-i18n="nav_projetos">Projetos Comerciais</a>
+            </li>
+            <li><a href="#contact" data-i18n="nav_contato">Contato</a></li>
+          </ul>
+          <button id="btn-lang" class="lang-toggle" data-i18n="btn_lang">
+            <span class="flag-icon">🇧🇷</span> PT
+          </button>
+        </div>
       </div>
     </nav>
 

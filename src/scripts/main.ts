@@ -1,3 +1,4 @@
+import { BurgerMenuHandler } from "./burgerMenu.js";
 import {
   BrowserLanguageDetector,
   LocaleHandler,
@@ -9,14 +10,17 @@ const browserLanguageDetector = new BrowserLanguageDetector();
 const textLoader = new TextLoader();
 const localeHandler = new LocaleHandler(browserLanguageDetector, textLoader);
 
-function initializeLucideIcons(): void {
+const burgerMenuHandler = new BurgerMenuHandler();
+
+const initializeLucideIcons = (): void => {
   if (typeof window.lucide !== "undefined") {
     window.lucide.createIcons();
   }
-}
+};
 
 window.addEventListener("DOMContentLoaded", (): void => {
   localeHandler.execute();
+  burgerMenuHandler.execute();
 });
 
 window.addEventListener("scroll", revealOnScroll);
