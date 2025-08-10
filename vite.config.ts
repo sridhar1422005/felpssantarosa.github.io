@@ -8,12 +8,14 @@ export default defineConfig({
       targets: ["defaults", "not IE 11"],
     }),
   ],
-  base: "./", // For GitHub Pages deployment with custom domain
+  base: "./",
+  root: "src",
+  publicDir: "../public",
   build: {
-    outDir: "dist",
+    outDir: "../dist",
     assetsDir: "assets",
     rollupOptions: {
-      input: "src/index.html",
+      input: resolve(__dirname, "src/index.html"),
     },
     emptyOutDir: true,
   },
@@ -21,11 +23,9 @@ export default defineConfig({
     port: 3000,
     open: true,
   },
-  // TypeScript support
   esbuild: {
     target: "es2020",
   },
-  // Resolve aliases for cleaner imports
   resolve: {
     alias: {
       "@": resolve(__dirname, "src"),
