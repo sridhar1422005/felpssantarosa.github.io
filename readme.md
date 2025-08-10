@@ -60,7 +60,7 @@ personal-website/
 
 ### Prerequisites
 
-- Node.js (v16 or higher)
+- Node.js (v22 or higher)
 - npm or yarn
 
 ### Installation
