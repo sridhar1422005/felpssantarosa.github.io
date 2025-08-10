@@ -6,7 +6,9 @@
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-> A modern, responsive personal portfolio website showcasing my work as a Backend Developer specializing in Node.js, TypeScript, and systems architecture.
+> A modern, responsive personal portfolio website showcasing my work as a
+> Backend Developer specializing in Node.js, TypeScript, and systems
+> architecture.
 
 ## ✨ Features
 
@@ -28,33 +30,6 @@
 | **Vite**               | Build tool and development server        |
 | **Font Awesome**       | Icon library                             |
 | **Google Fonts**       | Typography (Inter & Fira Code)           |
-
-## 📂 Project Structure
-
-```
-personal-website/
-├── 📄 index.html              # Main HTML file
-├── 📋 readme.md               # Project documentation
-├── 📂 public/                 # Static assets served by Vite
-│   ├── 📷 assets/
-│   │   └── profile.webp       # Profile image
-│   └── 🌍 locales/
-│       ├── en-us.json         # English translations
-│       └── pt-br.json         # Portuguese translations
-├── 📜 scripts/
-│   ├── locale.js              # Internationalization logic
-│   ├── main.js                # Main application entry
-│   └── revealOnScroll.js      # Scroll animations
-└── 🎨 styles/
-    ├── main.css               # Main stylesheet
-    └── components/
-        ├── footer.css         # Footer styles
-        ├── hero.css           # Hero section styles
-        ├── navigation.css     # Navigation styles
-        ├── project-card.css   # Project card styles
-        ├── skills.css         # Skills section styles
-        └── social-buttons.css # Social media buttons
-```
 
 ## 🚀 Getting Started
 
@@ -114,11 +89,7 @@ The website supports multiple languages through a custom i18n system:
 
 ## 📱 Responsive Design
 
-The website is fully responsive with breakpoints for:
-
-- 📱 **Mobile**: < 768px
-- 📲 **Tablet**: 768px - 1024px
-- 💻 **Desktop**: > 1024px
+The website is fully responsive with support for all types of screens! Try resizing your browser window to see the layout adapt!
 
 ## 🎯 Sections
 
@@ -136,12 +107,6 @@ This site is deployed using GitHub Pages with automated GitHub Actions:
 2. GitHub Actions automatically builds the project with Vite
 3. Deploys the built files to GitHub Pages
 4. Visit [felpssantarosa.github.io](https://felpssantarosa.github.io)
-
-### Alternative Deployment Options
-
-- **Netlify**: Drag and drop the `dist` folder after running `npm run build`
-- **Vercel**: Connect GitHub repository (auto-detects Vite)
-- **Firebase Hosting**: Use Firebase CLI with the `dist` folder
 
 ## ⚡ Vite Benefits
 
@@ -161,13 +126,14 @@ While this is a personal website, suggestions and improvements are welcome!
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
+3. Commit changes (`git commit -m 'feat: add amazing feature'`)
 4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
+for details.
 
 ## 📬 Contact
 
