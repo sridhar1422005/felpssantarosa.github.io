@@ -63,7 +63,7 @@
   font-weight: bold;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 540px) {
   .circular-img {
     width: 180px;
     height: 180px;
@@ -85,11 +85,7 @@
 
   .btn-social {
     padding: 0.4rem 0.8rem;
-    width: 75%;
-  }
-
-  #about p {
-    width: 100%;
+    width: 85%;
   }
 }
 

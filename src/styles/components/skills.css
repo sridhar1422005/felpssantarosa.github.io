@@ -45,27 +45,27 @@
 }
 
 /* Technology-specific icon colors on hover */
-.skill-btn:hover .skill-icon[alt="Node.js"] {
+.skill-btn:hover .skill-icon[alt='Node.js'] {
   filter: brightness(0) saturate(100%) invert(54%) sepia(85%) saturate(6919%)
     hue-rotate(93deg) brightness(101%) contrast(101%);
 }
 
-.skill-btn:hover .skill-icon[alt="TypeScript"] {
+.skill-btn:hover .skill-icon[alt='TypeScript'] {
   filter: brightness(0) saturate(100%) invert(36%) sepia(83%) saturate(3448%)
     hue-rotate(207deg) brightness(91%) contrast(93%);
 }
 
-.skill-btn:hover .skill-icon[alt="Docker"] {
+.skill-btn:hover .skill-icon[alt='Docker'] {
   filter: brightness(0) saturate(100%) invert(52%) sepia(84%) saturate(5436%)
     hue-rotate(202deg) brightness(91%) contrast(96%);
 }
 
-.skill-btn:hover .skill-icon[alt="Redis"] {
+.skill-btn:hover .skill-icon[alt='Redis'] {
   filter: brightness(0) saturate(100%) invert(20%) sepia(90%) saturate(6705%)
     hue-rotate(356deg) brightness(102%) contrast(95%);
 }
 
-.skill-btn:hover .skill-icon[alt="gRPC"] {
+.skill-btn:hover .skill-icon[alt='gRPC'] {
   filter: brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(1352%)
     hue-rotate(202deg) brightness(99%) contrast(97%);
 }
@@ -73,9 +73,9 @@
 .skills-secondary {
   color: var(--text-muted);
   margin-top: 0.5rem;
-  text-align: right;
+  text-align: center;
   max-width: 460px;
-  margin-left: auto;
+  margin: auto;
 }
 
 @media screen and (max-width: 500px) {

@@ -1,4 +1,17 @@
+.projects-cards-container {
+  display: flex;
+  gap: 2rem;
+  flex: 1 1 500px;
+}
+
+.card-description {
+  flex: 0 1 0;
+}
+
 .project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   background: var(--card-bg);
   padding: 2rem;
   border-radius: 16px;
@@ -20,6 +33,7 @@
   background-color: var(--hover-transform);
   padding: 1rem;
   border-radius: 16px;
+  align-self: flex-end;
 }
 
 .project-card h4 {
@@ -27,12 +41,36 @@
   margin-top: 0;
 }
 
+/* Icon alignment for challenge titles */
+.project-card h4 .icon-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  line-height: 1.2;
+}
+
+.project-card h4 .icon-label i[data-lucide] {
+  display: inline-block;
+  width: 1.1em;
+  height: 1.1em;
+  position: relative;
+  top: -0.02em;
+  flex-shrink: 0;
+}
+
+.project-card h4 .icon-label .challenges-title {
+  display: inline-block;
+  line-height: 1.2;
+}
+
 .project-card ul.challenges li {
   list-style-position: inside;
 }
 
 .card-section {
-  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 ul.tools {
@@ -200,5 +238,11 @@ ul.tools li:hover {
 @media screen and (max-width: 500px) {
   .project-card {
     padding: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  .projects-cards-container {
+    flex-direction: column;
   }
 }

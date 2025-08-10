@@ -29,7 +29,7 @@ export class TextLoader {
 
   public async execute(
     language: SupportedLanguage,
-    languageButtonElement?: HTMLButtonElement
+    languageButtonElement?: HTMLButtonElement,
   ): Promise<void> {
     try {
       const response = await fetch(`./locales/${language}.json`);
@@ -75,7 +75,7 @@ export class TextLoader {
   public async handleProjects(projects: Project[]) {
     projects.forEach((project: Project, index: number) => {
       const projectElement: HTMLElement | null = document.getElementById(
-        `project${index + 1}`
+        `project${index + 1}`,
       );
 
       if (!projectElement) return;
@@ -84,11 +84,11 @@ export class TextLoader {
         project;
 
       const projectTitleElement: HTMLElement | null =
-        projectElement.querySelector("h3");
+        projectElement.querySelector(".project-title");
       const descriptionElement: HTMLElement | null =
         projectElement.querySelector("p");
       const challengesTitleElement: HTMLElement | null =
-        projectElement.querySelector("h4");
+        projectElement.querySelector(".challenges-title");
       const challengesListElement: HTMLElement | null =
         projectElement.querySelector(".challenges");
       const toolsListElement: HTMLElement | null =

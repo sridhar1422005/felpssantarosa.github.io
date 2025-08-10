@@ -195,7 +195,7 @@
 
     <!-- Skills -->
     <section id="skills" class="container reveal">
-  <h2 data-i18n="skills_title"><span class="icon-label"><i data-lucide="zap"></i><span> Skills</span></span></h2>
+      <h2 data-i18n="skills_title"><span class="icon-label"><i data-lucide="zap"></i><span> Skills</span></span></h2>
 
       <ul class="skills-list">
         <li class="skill-btn">
@@ -245,66 +245,68 @@
 
     <!-- Projects -->
     <section id="projects" class="container reveal">
-  <h2 data-i18n="projects_title"><span class="icon-label"><i data-lucide="folder-open"></i><span> Projetos Comerciais</span></span></h2>
+      <h2 data-i18n="projects_title"><span class="icon-label"><i data-lucide="folder-open"></i><span class="projects-section-title"> Projetos Comerciais</span></span></h2>
+      
+      <div class="projects-cards-container">
+        <div class="project-card" id="project1">
+          <h3><span class="icon-label"><i data-lucide="bot"></i> <span class="project-title">Chatbot Para Farmácias de Manipulação</span></span></h3>
 
-      <div class="project-card" id="project1">
-        <h3><i data-lucide="bot"></i> Chatbot Para Farmácias de Manipulação</h3>
+          <div class="card-section">
+            <p>
+              Participei de um projeto onde eu e meu time estruturamos um sistema de
+              Chatbot do zero, para atender a demanda de farmácias de manipulação
+              parceiras. O projeto foi uma parceria com uma das maiores redes de
+              farmácias de São Paulo.
+            </p>
+          </div>
 
-        <div class="card-section">
-          <p>
-            Participei de um projeto onde eu e meu time estruturamos um sistema de
-            Chatbot do zero, para atender a demanda de farmácias de manipulação
-            parceiras. O projeto foi uma parceria com uma das maiores redes de
-            farmácias de São Paulo.
-          </p>
+          <div class="card-section">
+            <h4><span class="icon-label"><i data-lucide="target"></i> <span class="challenges-title">Principais Desafios</span></span></h4>
+
+            <ul class="challenges">
+              <li>
+                Identificação de dados em strings, tentando extrair informações
+                relevantes para cada passo da triagem.
+              </li>
+              <li>
+                Identificação de quando um usuário queria falar com um atendente.
+              </li>
+              <li>Caching de dados para evitar perguntas repetidas ao cliente.</li>
+              <li>
+                Realização de testes para um sistema que foi estruturado
+                internamente.
+              </li>
+            </ul>
+          </div>
+
+          <div class="card-section card-footer">
+            <h4 data-i18n="tools_title"><span class="icon-label"><i data-lucide="wrench"></i> <span>Ferramentas Utilizadas</span></span></h4>
+            <ul class="tools" id="project1_tools"></ul>
+          </div>
         </div>
 
-        <div class="card-section">
-          <h4><i data-lucide="target"></i> Principais Desafios</h4>
+        <div class="project-card" id="project2">
+          <h3><i data-lucide="shopping-cart"></i> <span class="project-title">Website Administrativo/Marketplace</span></h3>
 
-          <ul class="challenges">
-            <li>
-              Identificação de dados em strings, tentando extrair informações
-              relevantes para cada passo da triagem.
-            </li>
-            <li>
-              Identificação de quando um usuário queria falar com um atendente.
-            </li>
-            <li>Caching de dados para evitar perguntas repetidas ao cliente.</li>
-            <li>
-              Realização de testes para um sistema que foi estruturado
-              internamente.
-            </li>
+          <div class="card-section">
+            <p>
+              Participei de um projeto onde realizei a criação de telas
+              administrativas, componentes da biblioteca interna (botões, modais,
+              seletores, etc.) e integração com a API de lojas parceiras.
+            </p>
+          </div>
+
+          <div class="card-section" style="flex: 2">
+            <h4><span class="icon-label"><i data-lucide="target"></i> <span class="challenges-title">Principais Desafios</span></span></h4>
+
+            <ul class="challenges">
+              <li>Compreensão da API de lojas parceiras.</li>
+              <li>Criação de uma interface de usuário intuitiva e responsiva.</li>
+              <li>Garantia de performance e escalabilidade da aplicação.</li>
           </ul>
         </div>
 
-        <div class="card-footer">
-          <h4 data-i18n="tools_title"><span class="icon-label"><i data-lucide="wrench"></i> <span>Ferramentas Utilizadas</span></span></h4>
-          <ul class="tools" id="project1_tools"></ul>
-        </div>
-      </div>
-
-      <div class="project-card" id="project2">
-        <h3><i data-lucide="shopping-cart"></i> Website Administrativo/Marketplace</h3>
-
-        <div class="card-section">
-          <p>
-            Participei de um projeto onde realizei a criação de telas
-            administrativas, componentes da biblioteca interna (botões, modais,
-            seletores, etc.) e integração com a API de lojas parceiras.
-          </p>
-        </div>
-
-        <div class="card-section">
-          <h4><i data-lucide="target"></i> Principais Desafios</h4>
-
-          <ul class="challenges">
-            <li>Compreensão da API de lojas parceiras.</li>
-            <li>Criação de uma interface de usuário intuitiva e responsiva.</li>
-            <li>Garantia de performance e escalabilidade da aplicação.</li>
-        </ul>
-
-        <div class="card-footer">
+        <div class="card-section card-footer">
           <h4 data-i18n="tools_title"><span class="icon-label"><i data-lucide="wrench"></i> <span>Ferramentas Utilizadas</span></span></h4>
           <ul class="tools" id="project2_tools"></ul>
         </div>
@@ -314,7 +316,7 @@
     <footer>
       <!-- Contact -->
       <section id="contact" class="container reveal mb-0 pb-0">
-  <h2 data-i18n="contact_title"><span class="icon-label"><i data-lucide="phone"></i><span> Contato</span></span></h2>
+        <h2 data-i18n="contact_title"><span class="icon-label"><i data-lucide="phone"></i><span> Contato</span></span></h2>
 
         <p class="contact-item">
           <i data-lucide="mail"></i>
