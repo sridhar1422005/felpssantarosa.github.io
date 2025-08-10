@@ -1,4 +1,4 @@
-# Felipe Santarosa - Personal Website 🚀
+# Felipe Santarosa - Professional Website 💼
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel)](https://felpssantarosa.github.io)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
