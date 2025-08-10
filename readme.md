@@ -14,6 +14,24 @@
 > Backend Developer specializing in Node.js, TypeScript, and systems
 > architecture.
 
+## 📚 Table of Contents
+
+- [✨ Features](#-features)
+- [🛠️ Tech Stack](#️-tech-stack)
+- [🚀 Getting Started](#-getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Building for Production](#building-for-production)
+- [🌐 Internationalization](#-internationalization)
+  - [Adding New Languages](#adding-new-languages)
+- [📱 Responsive Design](#-responsive-design)
+- [🎯 Sections](#-sections)
+- [🚀 Deployment](#-deployment)
+- [⚡ Vite Benefits](#-vite-benefits)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+- [📬 Contact](#-contact)
+
 ## ✨ Features
 
 - 🌐 **Multilingual Support** - Available in English and Portuguese
