@@ -7,7 +7,7 @@ export default defineConfig({
       targets: ["defaults", "not IE 11"],
     }),
   ],
-  base: "./", // For GitHub Pages deployment
+  base: "/", // For custom domain deployment
   build: {
     outDir: "dist",
     assetsDir: "assets",
