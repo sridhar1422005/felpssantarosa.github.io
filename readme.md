@@ -6,6 +6,10 @@
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
+<div align=center>
+<img width="2017" height="729" alt="image" src="https://github.com/user-attachments/assets/2f9b0aac-ffbd-4588-b598-c247609045e3" />
+</div>
+
 > A modern, responsive personal portfolio website showcasing my work as a
 > Backend Developer specializing in Node.js, TypeScript, and systems
 > architecture.
