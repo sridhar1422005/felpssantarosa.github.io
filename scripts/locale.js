@@ -96,3 +96,4 @@ btnLang?.addEventListener("click", () => {
   const newLang = currentLang === "pt-br" ? "en-us" : "pt-br";
   loadLanguage(newLang);
 });
+
