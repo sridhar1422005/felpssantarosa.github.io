@@ -27,25 +27,25 @@
 }
 
 .github {
-  background: #24292e;
+  background: var(--github-bg);
   color: white;
 }
 .github:hover {
-  background: #333;
+  background: var(--github-hover);
 }
 
 .linkedin {
-  background: #0077b5;
+  background: var(--linkedin-bg);
   color: white;
 }
 .linkedin:hover {
-  background: #005f8d;
+  background: var(--linkedin-hover);
 }
 
 .email {
-  background: #f97316;
+  background: var(--email-bg);
   color: white;
 }
 .email:hover {
-  background: #ea580c;
+  background: var(--email-hover);
 }

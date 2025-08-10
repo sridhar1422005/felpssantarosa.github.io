@@ -6,11 +6,76 @@
 @import url("components/skills.css");
 
 :root {
-  --bg-color: #0f172a;
-  --text-color: #f1f5f9;
-  --accent-color: #38bdf8;
-  --highlight-color: #22d3ee;
-  --card-bg: #29313c84;
+  /* Primary Brand Colors */
+  --primary-blue: #38bdf8;
+  --primary-blue-light: #7dd3fc;
+  --primary-blue-dark: #0284c7;
+  --highlight-cyan: #22d3ee;
+
+  /* Background Colors */
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-tertiary: #334155;
+  --bg-gradient-start: #0f172a;
+  --bg-gradient-mid-1: #141b2e;
+  --bg-gradient-mid-2: #1a2332;
+  --bg-overlay: rgba(15, 23, 42, 0.6);
+
+  /* Interactive States */
+  --hover-bg: rgba(56, 189, 248, 0.1);
+  --hover-bg-medium: rgba(56, 189, 248, 0.2);
+  --active-bg: rgba(56, 189, 248, 0.3);
+  --hover-transform: rgba(124, 100, 142, 0.1);
+
+  /* Text Colors */
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-contrast: #0f172a;
+  --text-light: #e4e4e7;
+  --text-white: #ffffff;
+  --text-near-white: #fafafa;
+
+  /* Border & Outline Colors */
+  --border-light: rgba(255, 255, 255, 0.1);
+  --border-medium: rgba(255, 255, 255, 0.2);
+  --border-subtle: #3f3f46;
+  --border-gray: #71717a;
+  --border-blue: #3b82f6;
+
+  /* Shadow Colors */
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --shadow-cyan: 0 4px 12px rgba(34, 211, 238, 0.3);
+  --shadow-blue: 0 0 12px rgba(59, 130, 246, 0.3);
+  --shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+  /* Social Media Brand Colors */
+  --github-bg: #24292e;
+  --github-hover: #333;
+  --linkedin-bg: #0077b5;
+  --linkedin-hover: #005f8d;
+  --email-bg: #f97316;
+  --email-hover: #ea580c;
+
+  /* Special Effects */
+  --gradient-purple-blue: linear-gradient(45deg, #3b82f6, #8b5cf6);
+  --gradient-dark: linear-gradient(
+    135deg,
+    rgba(24, 24, 27, 0.8) 0%,
+    rgba(39, 39, 42, 0.4) 100%
+  );
+  --hover-project-card: #563f3f;
+
+  /* Legacy Variables */
+  --bg-color: var(--bg-primary);
+  --text-color: var(--text-primary);
+  --accent-color: var(--primary-blue);
+  --highlight-color: var(--highlight-cyan);
+  --card-bg: var(--bg-tertiary);
+  --footer-bg: var(--bg-tertiary);
+
+  /* Typography */
   --font-main: "Inter", sans-serif;
   --font-code: "Fira Code", monospace;
 }
@@ -22,7 +87,7 @@
 }
 
 html {
-  scroll-padding-top: 70px; /* Extra space to accomodate the navbar size when clicking internal links */
+  scroll-padding-top: 70px;
 }
 
 html,
@@ -32,11 +97,11 @@ body {
   color: var(--text-color);
   background: linear-gradient(
     135deg,
-    #0f172a 0%,
-    #141b2e 40%,
-    #1a2332 50%,
-    #141b2e 60%,
-    #0f172a 100%
+    var(--bg-gradient-start) 0%,
+    var(--bg-gradient-mid-1) 40%,
+    var(--bg-gradient-mid-2) 50%,
+    var(--bg-gradient-mid-1) 60%,
+    var(--bg-gradient-start) 100%
   ) !important;
   margin: 0;
   padding: 0;

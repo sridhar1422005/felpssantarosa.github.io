@@ -1,6 +1,6 @@
 footer {
   clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 100%);
-  background-color: #343b4784;
+  background-color: var(--footer-bg);
   text-align: right;
   padding: 1rem;
   font-size: 0.9rem;
@@ -18,7 +18,7 @@ footer {
 }
 
 .copyright {
-  color: #ffffff;
+  color: var(--text-white);
   font-size: 0.8rem;
   text-align: left;
   margin-left: 2rem;

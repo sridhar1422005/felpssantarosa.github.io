@@ -2,10 +2,10 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(15, 23, 42, 0.6);
+  background: var(--bg-overlay);
   backdrop-filter: blur(10px);
   z-index: 1000;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid var(--border-light);
 }
 
 .nav-container {
@@ -47,7 +47,7 @@
 }
 
 .lang-toggle {
-  background: rgba(56, 189, 248, 0.1);
+  background: var(--hover-bg);
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
   padding: 0.5rem 1rem;
@@ -62,7 +62,7 @@
 }
 
 .lang-toggle:hover {
-  background: rgba(56, 189, 248, 0.2);
+  background: var(--hover-bg-medium);
   transform: translateY(-2px);
 }
 

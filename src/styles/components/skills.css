@@ -39,9 +39,9 @@
 
 .skill-btn:hover {
   background: var(--highlight-color);
-  color: #0f172a;
+  color: var(--text-contrast);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(34, 211, 238, 0.3);
+  box-shadow: var(--shadow-cyan);
 }
 
 /* Technology-specific icon colors on hover */
@@ -71,7 +71,7 @@
 }
 
 .skills-secondary {
-  color: #94a3b8;
+  color: var(--text-muted);
   margin-top: 0.5rem;
   text-align: right;
   max-width: 460px;
