@@ -35,8 +35,8 @@
 personal-website/
 ├── 📄 index.html              # Main HTML file
 ├── 📋 readme.md               # Project documentation
-├── � public/                 # Static assets served by Vite
-│   ├── �🖼️ assets/
+├── 📂 public/                 # Static assets served by Vite
+│   ├── 📷 assets/
 │   │   └── profile.webp       # Profile image
 │   └── 🌍 locales/
 │       ├── en-us.json         # English translations
@@ -175,7 +175,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - 🌐 **Website**: [felpssantarosa.github.io](https://felpssantarosa.github.io)
 - 💼 **LinkedIn**: [Connect with me](https://linkedin.com/in/felpssantarosa)
-- 📧 **Email**: [Get in touch](mailto:your-email@example.com)
+- 📧 **Email**: [Get in touch](mailto:contact@felipesantarosa.com)
 - 🐙 **GitHub**: [@felpssantarosa](https://github.com/felpssantarosa)
 
 ---
