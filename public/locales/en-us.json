@@ -55,6 +55,27 @@
         "CSS-in-JS",
         "Tailwind CSS"
       ]
+    },
+    {
+      "title": "Mobile App for Farm Rentals",
+      "description": "I participated in a project where my team and I built a rental system for farms, similar to platforms like Airbnb. With a web administrative panel and a React Native application.",
+      "challenges_title": "Main Challenges",
+      "challenges": [
+        "Creating an intuitive and responsive user interface.",
+        "Integration with geolocation services to display nearby properties.",
+        "Implementation of a reservation system."
+      ],
+      "tools": [
+        "NodeJS",
+        "JavaScript",
+        "TypeScript",
+        "ReactNative",
+        "React",
+        "Styled Components",
+        "CSS-in-JS",
+        "SQLite",
+        "Sequelize"
+      ]
     }
   ],
   "tools_title": "<i data-lucide=\"wrench\"></i> Tools Used",

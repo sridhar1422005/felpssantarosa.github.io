@@ -65,6 +65,7 @@
       "description": "Desenvolvi uma plataforma de aluguel para chácaras, similar a plataformas como Airbnb. Com um painel administrativo web e uma aplicação React Native.",
       "challenges_title": "Principais Desafios",
       "challenges": [
+        "Criação de uma interface de usuário intuitiva e responsiva.",
         "Integração com serviços de geolocalização para exibir propriedades próximas.",
         "Implementação de um sistema de reservas."
       ],
