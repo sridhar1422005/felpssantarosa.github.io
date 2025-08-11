@@ -76,7 +76,7 @@
   gap: 0.5rem;
 }
 
-.nav-links a i {
+.nav-links a > i {
   width: 16px;
   height: 16px;
 }
@@ -113,7 +113,7 @@
   transform: translateY(-2px);
 }
 
-.lang-toggle i {
+.nav-container .lang-toggle > i {
   width: 16px;
   height: 16px;
 }

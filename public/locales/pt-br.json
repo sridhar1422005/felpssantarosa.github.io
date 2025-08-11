@@ -34,7 +34,8 @@
         "Redis",
         "Clean Architecture",
         "SOLID",
-        "Domain-Driven Design"
+        "Domain-Driven Design",
+        "Prisma"
       ]
     },
     {
@@ -54,7 +55,29 @@
         "NextJS",
         "Styled Components",
         "CSS-in-JS",
-        "Tailwind CSS"
+        "Tailwind CSS",
+        "Docker",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "title": "Plataforma de Aluguel de Chácaras",
+      "description": "Desenvolvi uma plataforma de aluguel para chácaras, similar a plataformas como Airbnb. Com um painel administrativo web e uma aplicação React Native.",
+      "challenges_title": "Principais Desafios",
+      "challenges": [
+        "Integração com serviços de geolocalização para exibir propriedades próximas.",
+        "Implementação de um sistema de reservas."
+      ],
+      "tools": [
+        "NodeJS",
+        "JavaScript",
+        "TypeScript",
+        "ReactNative",
+        "React",
+        "Styled Components",
+        "CSS-in-JS",
+        "SQLite",
+        "Sequelize"
       ]
     }
   ],

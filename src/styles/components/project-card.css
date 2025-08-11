@@ -1,7 +1,9 @@
 .projects-cards-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  flex: 1 1 500px;
+  max-width: 100%;
+  width: 100%;
 }
 
 .card-description {
@@ -11,6 +13,7 @@
 .project-card {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 2rem;
   background: var(--card-bg);
   padding: 2rem;
@@ -27,6 +30,11 @@
   box-shadow: var(--shadow-hover);
 }
 
+/* Make third card (and any odd-numbered card that would be alone) span both columns */
+.project-card:nth-child(odd):last-child {
+  grid-column: 1 / -1;
+}
+
 .card-footer {
   margin-top: 1.5rem;
   border: solid 1px var(--border-subtle);
@@ -41,7 +49,6 @@
   margin-top: 0;
 }
 
-/* Icon alignment for challenge titles */
 .project-card h4 .icon-label {
   display: inline-flex;
   align-items: center;
@@ -82,7 +89,7 @@ ul.tools {
   gap: 10px;
 }
 
-ul.tools li {
+.project-card ul.tools li {
   border-radius: 9999px;
 
   background-color: transparent;
@@ -113,7 +120,8 @@ ul.tools li {
   width: 100%;
 }
 
-.icon-label {
+.project-card h2 .icon-label,
+.project-card h4 .icon-label {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
@@ -121,17 +129,16 @@ ul.tools li {
   line-height: 1.2;
 }
 
-/* Normalize lucide icon alignment inside titles */
-.icon-label i[data-lucide] {
+.project-card h2 .icon-label i[data-lucide],
+.project-card h4 .icon-label i[data-lucide] {
   display: inline-block;
   width: 1em;
   height: 1em;
   vertical-align: middle;
   position: relative;
-  top: -0.02em; /* tiny optical tweak */
+  top: -0.02em;
 }
 
-/* Ensure nested span text aligns alongside the icon */
 .icon-label > span {
   line-height: 1.2;
   display: inline-block;
@@ -146,7 +153,6 @@ ul.tools li {
   display: block;
 }
 
-/* Technology-specific colors on hover */
 ul.tools li:hover .tool-nodejs .tool-icon {
   filter: brightness(0) saturate(100%) invert(54%) sepia(85%) saturate(6919%)
     hue-rotate(93deg) brightness(101%) contrast(101%);
@@ -239,10 +245,25 @@ ul.tools li:hover {
   .project-card {
     padding: 0.8rem;
   }
+
+  .projects-cards-container {
+    grid-template-columns: 1fr;
+  }
 }
 
-@media screen and (max-width: 1420px) {
+@media screen and (max-width: 900px) {
   .projects-cards-container {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .projects-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Make single card in bottom row span both columns */
+  .project-card:nth-child(odd):last-child {
+    grid-column: 1 / -1;
   }
 }
