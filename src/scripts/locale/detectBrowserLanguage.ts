@@ -1,4 +1,4 @@
-import { SupportedLanguage } from ".";
+import { SupportedLanguage } from "./index.js";
 
 export class BrowserLanguageDetector {
   supportedLanguages = Object.values(SupportedLanguage);
