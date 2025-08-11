@@ -28,6 +28,8 @@ export class TextLoader {
       "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tailwindcss.svg",
     SQLite: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/sqlite.svg",
     Sequelize: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/sequelize.svg",
+    Prisma: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/prisma.svg",
+    PostgreSQL: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/postgresql.svg",
   };
   private fallbackToolIcon: string =
     "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/code.svg";
