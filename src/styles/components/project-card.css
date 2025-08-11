@@ -30,7 +30,6 @@
   box-shadow: var(--shadow-hover);
 }
 
-/* Make third card (and any odd-numbered card that would be alone) span both columns */
 .project-card:nth-child(odd):last-child {
   grid-column: 1 / -1;
 }
@@ -41,7 +40,6 @@
   background-color: var(--hover-transform);
   padding: 1rem;
   border-radius: 16px;
-  align-self: flex-end;
 }
 
 .project-card h4 {
@@ -121,6 +119,7 @@ ul.tools {
 }
 
 .project-card h2 .icon-label,
+.project-card h3 .icon-label,
 .project-card h4 .icon-label {
   display: inline-flex;
   align-items: center;
@@ -130,6 +129,7 @@ ul.tools {
 }
 
 .project-card h2 .icon-label i[data-lucide],
+.project-card h3 .icon-label i[data-lucide],
 .project-card h4 .icon-label i[data-lucide] {
   display: inline-block;
   width: 1em;
