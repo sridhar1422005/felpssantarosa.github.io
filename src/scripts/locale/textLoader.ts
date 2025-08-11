@@ -1,11 +1,13 @@
-import { LocaleTexts, Project, ToolIcons } from "@/types/global";
-import { SupportedLanguage } from ".";
+import type { LocaleTexts, Project, ToolIcons } from "@/types/global";
+import type { SupportedLanguage } from ".";
 
 export class TextLoader {
   private toolIcons: ToolIcons = {
     NodeJS: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/nodedotjs.svg",
     TypeScript:
       "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/typescript.svg",
+    JavaScript:
+      "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/javascript.svg",
     "REST API":
       "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/fastapi.svg",
     gRPC: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/google.svg",
@@ -17,12 +19,15 @@ export class TextLoader {
     "Domain-Driven Design":
       "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/blueprint.svg",
     React: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/react.svg",
+    ReactNative: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/react.svg",
     NextJS: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/nextdotjs.svg",
     "Styled Components":
       "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/styledcomponents.svg",
     "CSS-in-JS": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/css3.svg",
     "Tailwind CSS":
       "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tailwindcss.svg",
+    SQLite: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/sqlite.svg",
+    Sequelize: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/sequelize.svg",
   };
   private fallbackToolIcon: string =
     "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/code.svg";

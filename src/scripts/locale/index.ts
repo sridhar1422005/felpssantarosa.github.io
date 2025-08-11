@@ -1,6 +1,6 @@
 import { BrowserLanguageDetector } from "./detectBrowserLanguage";
 import { TextLoader } from "./textLoader";
-import { LocaleLanguageUpdater } from "./updateCurrentLanguage";
+import { updateCurrentLanguage } from "./updateCurrentLanguage";
 
 export enum SupportedLanguage {
   "PORTUGUESE" = "pt-br",
@@ -14,7 +14,7 @@ class LocaleHandler {
 
   constructor(
     private languageDetector: BrowserLanguageDetector,
-    private languageLoader: TextLoader
+    private languageLoader: TextLoader,
   ) {
     this.languageButtonElement?.addEventListener("click", () => {
       this.currentLanguage =
@@ -50,13 +50,8 @@ class LocaleHandler {
 
     this.languageLoader.execute(this.currentLanguage, languageButtonElement);
 
-    LocaleLanguageUpdater.execute(this.currentLanguage);
+    updateCurrentLanguage(this.currentLanguage);
   }
 }
 
-export {
-  LocaleLanguageUpdater,
-  BrowserLanguageDetector,
-  TextLoader,
-  LocaleHandler,
-};
+export { BrowserLanguageDetector, TextLoader, LocaleHandler };
